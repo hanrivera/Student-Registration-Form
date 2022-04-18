@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
     <!-- tailwindcss -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +20,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="form">
-        <div class="title">
+    <div class="container-sm">
+        <div class="bg-cyan-600">
             <h1>STUDENT ENROLLMENT FORM</h1>
             <p>Please fill-out the enrollment form carefully.</p>
         </div>
         <div class="content">
-            <h2>Student Information</h2>
+            <h2 class="font-medium text-2xl">Student Information</h2>
             <!-- name -->
-            <h3>Name</h3>
-            <div class="flex flex-wrap justify-between">
+            <h3 class="font-medium text-lg">Name</h3>
+            <div class="flex flex-wrap">
                 <div>
                     <label for="">First Name</label>
                     <input type="text" name="" id="">
@@ -44,12 +44,12 @@
                 </div>
             </div>
             <!-- address -->
-            <h3>Address</h3>  
+            <h3 class="font-medium text-lg">Address</h3>  
             <div>
                 <label for="">Street Address</label>
                 <input type="text" name="" id="">
             </div>
-            <div class="flex flex-wrap justify-between">
+            <div class="flex flex-wrap">
                 <div>
                     <label for="">City</label>
                     <input type="text" name="" id="">
@@ -64,8 +64,8 @@
                 </div>
             </div>
             <!-- birth date -->
-            <h3>Birth Date</h3>
-            <div class="flex flex-wrap justify-between">
+            <h3 class="font-medium text-lg">Birth Date</h3>
+            <div class="flex flex-wrap">
                 <div>
                     <label for="">Month</label>
                     <select name="" id="">
@@ -97,16 +97,16 @@
             </div>
             <!-- contact number -->
             <div>
-                <label for="">Contact Number</label>
+                <label for="" class="font-medium text-lg text-black">Contact Number</label>
                 <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789">
             </div>
             <!-- email -->
             <div>
-                <label for="">E-mail Address</label>
+                <label for="" class="font-medium text-lg text-black">E-mail Address</label>
                 <input type="email" placeholder="name@email.com">
             </div>
             <!-- educational background -->
-            <h2>Educational Background</h2>
+            <h2 class="font-medium text-2xl">Educational Background</h2>
             <div>
                 <div>
                     <label for="">Primary School</label>
@@ -146,7 +146,7 @@
                 </div>
             </div>
             <!-- person to contact -->
-            <h2>Person to Contact</h2>
+            <h2 class="font-medium text-2xl">Person to Contact</h2>
             <div>
                 <label for="">Name</label>
                 <input type="text">
