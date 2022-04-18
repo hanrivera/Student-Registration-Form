@@ -1,18 +1,45 @@
 @import "input.css";
+@import "tailwind-mod.css";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid goldenrod;
+    margin-bottom: 8px;
+
+
 }
 
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-div.form{
+.form{
     width: 50%;
-    height: auto;
-    padding: 1rem;
+    margin: auto;
+
+    border: 1px solid black
+}
+
+.title{
+    padding: 16px;
+    background: #15aabf;
+}
+
+.title p{
+    font-size: 12px;
+}
+
+.content{
+    padding: 16px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 600;
 }
