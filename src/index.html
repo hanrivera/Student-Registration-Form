@@ -19,104 +19,122 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-neutral-200">
-    <div class="bg-neutral-50 text-neutral-600">
+<body class="bg-neutral-50">
+    <!-- form -->
+    <div>
+        <!-- title -->
         <div class="bg-cyan-600 text-white p-4">
-            <h1 class="font-bold text-2xl mb-1">STUDENT ENROLLMENT FORM</h1>
-            <p class="text-sm">Please fill-out the enrollment form carefully.</p>
+            <div class="w-3/5 m-auto">
+                <h1 class="font-bold text-2xl mb-1">STUDENT ENROLLMENT FORM</h1>
+                <p class="text-sm font-light">Please fill-out the enrollment form carefully.</p>
+            </div>
         </div>
-        <div class="content m-4">
-            <h2 class="font-medium text-xl">Student Information</h2>
-            <!-- name -->
-            <h3>Name</h3>
-            <div class="flex flex-wrap flex-auto">
-                <div class="item w-64">
-                    <label for="">First Name</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="item w-64">
-                    <label for="">Middle Name</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="item w-64">
-                    <label for="">Last Name</label>
-                    <input type="text" name="" id="">
-                </div>
-            </div>
-            <!-- address -->
-            <h3>Address</h3>  
+        <!-- content -->
+        <div class="text-neutral-600 w-3/5 m-auto p-4">
+            <!-- student information -->
             <div>
-                <label for="">Street Address</label>
-                <input type="text" name="" id="">
+                <h2 class="font-medium text-xl">Student Information</h2>
+                <hr class="mb-2">
             </div>
-            <div class="flex flex-wrap">
-                <div class="item w-64">
-                    <label for="">City</label>
+            <div class="mb-8">
+                <!-- name -->
+                <h3 class="mb-1">Name</h3>
+                <div class="flex flex-wrap flex-auto mb-4">
+                    <div class="item w-64 mr-2">
+                        <label for="">First Name</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="item w-64 mr-2">
+                        <label for="">Middle Name</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="item w-64">
+                        <label for="">Last Name</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <!-- address -->
+                <h3 class="mb-1">Address</h3>  
+                <div class=" mb-2">
+                    <label for="">Street Address</label>
                     <input type="text" name="" id="">
                 </div>
-                <div class="item w-64">
-                    <label for="">Province</label>
-                    <input type="text" name="" id="">
+                <div class="flex flex-wrap flex-auto mb-4">
+                    <div class="item w-64 mr-2">
+                        <label for="">City</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="item w-64 mr-2">
+                        <label for="">Province</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="item w-64 mr-2">
+                        <label for="">Zip Code</label>
+                        <input type="number">
+                    </div>
                 </div>
-                <div class="item w-64">
-                    <label for="">Zip Code</label>
-                    <input type="number">
+                <!-- birth date -->
+                <h3 class="mb-1">Birth Date</h3>
+                <div class="flex flex-wrap mb-4">
+                    <div class="item w-32 mr-2"> 
+                        <label for="">Month</label>
+                        <select name="" id="">
+                            <option value="">January</option>
+                            <option value="">February</option>
+                            <option value="">March</option>
+                            <option value="">April</option>
+                        </select>
+                    </div>
+                    <div class="item w-32 mr-2">
+                        <label for="">Day</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <div class="w-32">
+                        <label for="">Year</label>
+                        <select name="" id="">
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <!-- birth date -->
-            <h3>Birth Date</h3>
-            <div class="flex flex-wrap">
-                <div class="item w-32">
-                    <label for="">Month</label>
-                    <select name="" id="">
-                        <option value="">January</option>
-                        <option value="">February</option>
-                        <option value="">March</option>
-                        <option value="">April</option>
-                    </select>
+                <!-- contact number -->
+                <div class="flex mb-4">
+                    <div class="w-64">
+                        <label for="" class="text-base text-neutral-600">Contact Number</label>
+                        <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789">
+                    </div>
                 </div>
-                <div class="item w-32">
-                    <label for="">Day</label>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                    </select>
+                <!-- email -->
+                <div class="flex mb-4">
+                    <div class="w-64">
+                        <label for="" class="text-base text-neutral-600">E-mail Address</label>
+                        <input type="email" placeholder="name@email.com">
+                    </div>
                 </div>
-                <div class="w-32">
-                    <label for="">Year</label>
-                    <select name="" id="">
-                        <option value="">2000</option>
-                        <option value="">2001</option>
-                        <option value="">2002</option>
-                        <option value="">2003</option>
-                        <option value="">2004</option>
-                    </select>
-                </div>
-            </div>
-            <!-- contact number -->
-            <div class="w-64">
-                <label for="" class="text-base text-neutral-600">Contact Number</label>
-                <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789">
-            </div>
-            <!-- email -->
-            <div class="w-64">
-                <label for="" class="text-base text-neutral-600">E-mail Address</label>
-                <input type="email" placeholder="name@email.com">
             </div>
             <!-- educational background -->
-            <h2 class="font-medium text-xl">Educational Background</h2>
             <div>
-                <div>
-                    <label for="">Primary School</label>
+                <h2 class="font-medium text-xl">Educational Background</h2>
+                <hr class="mb-2">
+            </div>
+            <div class="mb-8">
+                <div class="mb-4">
+                    <label for="" class="text-lg text-neutral-600">Primary School</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="mb-4">
                     <label for="">Address</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="w-32 mb-4">
                     <label for="">Year Graduated</label>
                     <select name="" id="">
                         <option value="">1</option>
@@ -126,15 +144,15 @@
                         <option value="">5</option>
                     </select>
                 </div>
-                <div>
-                    <label for="">High School</label>
+                <div class="mb-4">
+                    <label for="" class="text-lg text-neutral-600">High School</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="mb-4">
                     <label for="">Address</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="w-32 mb-4">
                     <label for="">Year Graduated</label>
                     <select name="" id="">
                         <option value="">1</option>
@@ -146,20 +164,26 @@
                 </div>
             </div>
             <!-- person to contact -->
-            <h2 class="font-medium text-xl">Person to Contact</h2>
             <div>
-                <label for="">Name</label>
-                <input type="text">
+                <h2 class="font-medium text-xl">Person to Contact</h2>
+                <hr class="mb-2">
             </div>
-            <div>
-                <label for="">Contact Number</label>
-                <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789">
-            </div>
-            <div>
-                <label for="">Relationship</label>
-                <input type="text" name="" id="">
+            <div class="mb-8">
+                <div class="w-64 mb-2">
+                    <label for="" class="mb-2 text-neutral-600 text-base">Name</label>
+                    <input type="text">
+                </div>
+                <div class="w-64 mb-2">
+                    <label for="" class="mb-2 text-neutral-600 text-base">Contact Number</label>
+                    <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789">
+                </div>
+                <div class="w-64 mb-2">
+                    <label for="" class="mb-2 text-neutral-600 text-base">Relationship</label>
+                    <input type="text" name="" id="">
+                </div>
             </div>
         </div>
+    </div>
 </body>
 <script>
     feather.replace()
